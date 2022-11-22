@@ -1,4 +1,4 @@
 export interface ITipo {
-    nombre : string, 
-    tipo : string[]
+    key : string, 
+    value : string
 }
