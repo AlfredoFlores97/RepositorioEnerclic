@@ -8,6 +8,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Component } from 'react';
+import { t } from "i18next";
 import { Bar } from 'react-chartjs-2';
 import { IDatosChart } from '../models/ModeloDatosChart';
 
@@ -29,7 +30,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Datos del año 2021',
+      text: t('Datos del año 2021'),
     },
   },
 };

@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 1200px) {
+  .overflow {
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tamanoCard {
+    max-height: 667px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tamanoCard {
+    max-height: 100%;
+  }
+}

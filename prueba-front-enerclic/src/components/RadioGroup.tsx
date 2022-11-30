@@ -1,7 +1,7 @@
-
 import FormControlLabel from "@mui/material/FormControlLabel/FormControlLabel";
 import Radio from "@mui/material/Radio/Radio";
 import RadioGroup from "@mui/material/RadioGroup/RadioGroup";
+import { t } from "i18next";
 import { ITipo } from "../models/ModeloTipo";
 
 interface RadioProps {
@@ -23,7 +23,7 @@ const ComponentRadioGroup = (props : RadioProps) => {
                     key={elem.key+index}
                     value={index}
                     control={<Radio />}
-                    label={elem.key}
+                    label={t(elem.key)}
                 />
                 );
             })}

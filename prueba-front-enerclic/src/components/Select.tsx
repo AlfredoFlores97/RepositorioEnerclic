@@ -1,5 +1,6 @@
 import MenuItem from "@mui/material/MenuItem/MenuItem";
 import Select from "@mui/material/Select/Select";
+import { t } from "i18next";
 import { ITipo } from "../models/ModeloTipo";
 
 interface SelectProps {
@@ -24,7 +25,7 @@ const ComponentSelect = (props : SelectProps) => {
             {props.opciones.map((elem, index) => {
                 return (
                     <MenuItem key={index} value={elem.value}>
-                        {elem.key}
+                        {t(elem.key)}
                     </MenuItem>
                 );
             })}

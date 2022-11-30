@@ -1,7 +1,8 @@
 import { ISelect } from "./ModeloSelect";
 import { ITipo } from "./ModeloTipo";
 
-export const labels = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];  
+export const labels = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']; 
+export const labelsIngles = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
 export const Api = 'https://apidatos.ree.es/';
 
 export const idiomas : ISelect[] = [{key : 'Español', value : 'es', datos : [{key : 'Español', value : 'es'}]},{key : 'Inglés', value : 'en', datos : [{key : 'Inglés', value : 'en'}]}];
@@ -38,3 +39,6 @@ export const listaTipos : ISelect[] = [ {key : 'Balance electrico', value : 'bal
                                         {key : 'Francia frontera', value : 'francia-frontera', datos : arrayIntercambiosTipo},
                                         {key : 'Portugal frontera', value : 'portugal-frontera', datos : arrayIntercambiosTipo},
                                         {key : 'Indice indisponibilidad', value : 'indice-indisponibilidad', datos : arrayIndiceDisponibilidadTipo}];
+
+export const cabeceraTablaEspañol : {label: string, key: string}[] = [{label: 'Tipo', key:'tipo'},{label: 'Mes', key:'mes'},{label: 'Valor', key:'valor'},{label: 'Porcentaje', key:'porcentaje'}];
+export const cabeceraTablaIngles : {label: string, key: string}[] = [{label: 'Type', key:'tipo'},{label: 'Month', key:'mes'},{label: 'Value', key:'valor'},{label: 'Percent', key :'porcentaje'}];
